@@ -11,6 +11,36 @@ body{
     background-size: cover;
     
 }
+.nav{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.185);
+    box-shadow: 0 0 15px grey;
+    border-radius: 20px;
+    border: 5px solid black;
+}
+.m{
+    text-decoration: none;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.829);
+    margin:50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    justify-content:space-evenly;
+    align-items: center;
+    
+    gap:1em;
+}
+.m:hover{
+    color:rgb(12, 219, 12);
+    font-weight:bold;
+    transition: 0.5s;
+}
 .box{
     display:block;
     margin:auto;
@@ -57,31 +87,47 @@ h1::selection{
     background-color: rgba(0, 0, 0, 0.959);
 }
 .box1{
-    display: inline-block;
+    display: flex;
+    margin:20px;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap:1em;
+    row-gap: 2em;
+    
+
+}
+.ani{
+    width:150px;
     height:250px;
     width: 150px;
     border:5px solid rgba(255, 255, 255, 0.377);
     
     margin-left: 10px;
-
 }
-.box1:hover{
+.ani:hover{
     transform:scale(1.05);
     box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.664);
-    border:5px solid rgba(0, 0, 0, 0.103)
+    border:5px solid rgba(0, 0, 0, 0.103);
+    transition:0.3s;/*smooth transition*/
 }
 .im{
     
     width:150px;
     height:200px;
 }
+a{
+    text-decoration: none;
+    
+}
+
 .pa{
-    display:flex;
+    
+    
     width:150px;
     height:50px;
     background-color: rgba(240, 248, 255, 0.308);
     align-items: center; 
-    flex-direction: column;
     justify-content: center;
     font-family:cursive;
     font-size: 1.5em;
@@ -92,8 +138,26 @@ h1::selection{
     animation-direction: alternate;
     align-self: start;
     color: rgba(26, 1, 1, 0.938);
-
+    font-size: clamp(12px, 1.5em, 22px);/*(minimum,preferred,maximum)*/
+    overflow-wrap: break-word;
+    overflow: auto;
+    line-height:1.1;
+    scrollbar-width: none;
+    box-sizing: border-box;
+    padding:2px;
 }
+.pa:hover{
+    color:rgba(128, 16, 16, 0.836);
+    font-weight: bold;
+    transition:0.3px;
+}
+.pa:active{
+    color:rgba(12, 1, 26, 0.836);
+    font-weight: bold;
+    transition:0.3px;
+}
+
+
 @keyframes colourchange{
     0%{background-color:black;}
     20%{background-color: rgba(0, 0, 0, 0.692);}/*at 20% animation change color*/
@@ -107,4 +171,13 @@ h1::selection{
     40%{background-color:rgba(128, 128, 128, 0.356);}
     80%{background-color: rgba(128, 128, 128, 0.322);}
     100%{background-color: rgba(128, 128, 128, 0.404);}
+}
+button{
+    position:absolute;
+    height:50px;
+    right:20px;
+    background-color: rgba(52, 230, 8, 0.315);
+    border:10px solid rgba(9, 27, 1, 0.466);
+    border-width: 5px;
+    border-radius: 20px;
 }
