@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    src: url(RubikStorm-Regular.ttf);
+
+}
+body{
+    background-image: url(black\ butler\ sebastian\ GIF.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.box{
+    display:block;
+    margin:auto;
+    box-sizing: border-box;
+    padding: 10px;
+    width:100%;
+    height:150px;
+    background-color: rgb(74, 10, 156);
+    transform: translatez(45px);
+    box-shadow: 0 0 15px grey;
+    border-radius: 20px;
+    border: 5px solid black;
+    animation-name: colourchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    align-self: start;
+    margin-bottom: 30px;
+   
+}
+
+.box h1{
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: bold;
+    
+
+
+
+}
+.box p{
+    color:white;
+    font-style: italic;
+    text-align: left;
+    float:none;
+}
+p::selection{
+    color:rgb(15, 235, 15);
+    background-color: rgba(0, 0, 0, 0.959);
+}
+h1::selection{
+    color:rgb(15, 235, 15);
+    background-color: rgba(0, 0, 0, 0.959);
+}
+.box1{
+    display: inline-block;
+    height:250px;
+    width: 150px;
+    border:5px solid rgba(255, 255, 255, 0.377);
+    
+    margin-left: 10px;
+
+}
+.box1:hover{
+    transform:scale(1.05);
+    box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.664);
+    border:5px solid rgba(0, 0, 0, 0.103)
+}
+.im{
+    
+    width:150px;
+    height:200px;
+}
+.pa{
+    display:flex;
+    width:150px;
+    height:50px;
+    background-color: rgba(240, 248, 255, 0.308);
+    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    font-family:cursive;
+    font-size: 1.5em;
+    font-style: italic;
+    animation-name: colourchange1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    align-self: start;
+    color: rgba(26, 1, 1, 0.938);
+
+}
+@keyframes colourchange{
+    0%{background-color:black;}
+    20%{background-color: rgba(0, 0, 0, 0.692);}/*at 20% animation change color*/
+    40%{background-color:rgba(0, 0, 0, 0.466);}
+    80%{background-color: rgba(0, 0, 0, 0.267);}
+    100%{background-color: black;}
+}
+@keyframes colourchange1{
+    0%{background-color:rgba(128, 128, 128, 0.452);}
+    20%{background-color: rgba(128, 128, 128, 0.315);}/*at 20% animation change color*/
+    40%{background-color:rgba(128, 128, 128, 0.356);}
+    80%{background-color: rgba(128, 128, 128, 0.322);}
+    100%{background-color: rgba(128, 128, 128, 0.404);}
+}
